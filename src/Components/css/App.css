@@ -1,0 +1,103 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contGlobal {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    /* width: 960px; */
+    margin: 0 auto;
+
+}
+
+.TodoSearch {
+    width: 100%;
+    height: 40px;
+}
+
+.contSearch {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+
+.contCard {
+    margin: 0px 15px 30px 15px;
+    width: 320px;
+}
+
+.conTbloques {
+    width: 100%;
+}
+
+.contCardInfo {
+    box-shadow: 0px 0px 8px 0px;
+    height: 100%;
+}
+
+.contInfo {
+    padding: 20px;
+
+}
+
+.titleTarje {
+    font-size: 30px;
+    color: black;
+    
+}
+
+.CardInfo p {
+    margin: 0;
+}
+
+.conTarjBotom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatarImg {
+    width: 100%;
+    /* height: 300px; */
+}
+
+.avatarImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.conCardGlobal {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.blockUser{
+    display: flex;
+    background: #e1e1e1;
+    margin: 0px 0px 15px;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blockUser div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+
+.blockUser a {
+    color: rgb(0, 96, 113);
+}
+
+.titleTop {
+    margin: 0px 0px 27px;
+    font-size: 20px;
+}
+
+.blockUser img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+}
