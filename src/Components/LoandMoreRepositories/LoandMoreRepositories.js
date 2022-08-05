@@ -3,7 +3,7 @@ import React from 'react';
 
 function LoandMoreRepositories(props) {
     return (
-        <button onClick={props.loandMoreRepoButon}>Loand More + 3</button>
+        <button className='btn btn-primary' onClick={props.loandMoreRepoButon}>Loand More <b>+3</b></button>
     )
 }
 
