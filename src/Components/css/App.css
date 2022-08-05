@@ -1,6 +1,10 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
 
 .contGlobal {
     display: flex;
@@ -39,6 +43,29 @@ body{
 
 .conTbloques {
     /* width: 100%; */
+}
+
+.contProces{
+    font-weight: 700;
+}
+
+.contProces .col-md-6:nth-child(2){
+    text-align: right;
+}
+
+.contCardBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body p:nth-child(2){
+    font-weight: 600;
+}
+
+.card-body p:nth-child(4){
+    display: flex;
+    justify-content: end;
 }
 
 .contCardInfo {

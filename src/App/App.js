@@ -14,11 +14,9 @@ function App() {
   const [constributions, setConstributions] = useState([]);
 
   const [selectApi, actualizApi] = useState({});
-  
+
   const [loandMoreRepositories, setLoandMoreRepositories] = useState(6);
   const [loandMore, setLoandMore] = useState(10);
-  
-
 
 
   const searchIput = (e) => {
@@ -56,6 +54,9 @@ function App() {
   }, [Url]);
 
 
+  const topContribuitor = constributions.length
+  const maxConstr = `?per_page=${loandMore}&q=`;
+  // console.log(loandMore)
 
   // Importando constributors de los Repositorios de Githut..
   useEffect(() => {
@@ -70,26 +71,21 @@ function App() {
 
 
 
-  const topContribuitor = constributions.length
-  const maxConstr = `?per_page=${loandMore}&q=`;
-  console.log(loandMore)
-
 
   return (
 
     <Api
-    selectApi={selectApi}
-    searchIput={searchIput}
-    butSearch={butSearch}
-    loandMoreRepoButon={loandMoreRepoButon}
-    topContribuitor={topContribuitor}
-    constributions={constributions}
-    loandMoreButon={loandMoreButon}
-    setUrlConstributions={setUrlConstributions}
-    maxConstr={maxConstr}
-    
+      selectApi={selectApi}
+      searchIput={searchIput}
+      butSearch={butSearch}
+      loandMoreRepoButon={loandMoreRepoButon}
+      topContribuitor={topContribuitor}
+      constributions={constributions}
+      loandMoreButon={loandMoreButon}
+      setUrlConstributions={setUrlConstributions}
+      maxConstr={maxConstr}
     />
-    
+
   );
 }
 
