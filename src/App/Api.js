@@ -9,15 +9,16 @@ import LoandMoreRepositories from '../Components/LoandMoreRepositories/LoandMore
 
 
 function Api({
-    selectApi,
-    searchIput,
-    butSearch,
-    loandMoreRepoButon,
-    topContribuitor,
-    constributions,
-    loandMoreButon,
-    setUrlConstributions,
-    maxConstr
+    selectApi, // LLamando la url de la Api.
+    searchIput, // Input para filtrando informacion para buscar los respositorios.
+    enterKye, // Precional enter para buscar
+    butSearch, // Button que se encarga de ejecural la funcion para filtral la informacion.
+    loandMoreRepoButon, // Mostral mas vista de los repositorios cargados.
+    topContribuitor, // Titulo del los contribuidores con #10 constribuidores en listado.
+    constributions, // Mostrando informacion de los construbuidores en listado.
+    loandMoreButon, // Mostrar mas constribuidores con el boton mas.
+    setUrlConstributions, // Actualizando el estado para traer los contribuidores.
+    maxConstr // Agregando a la url de contribuidores el total para mortal que es 10.
 
 }) {
     return (
@@ -25,6 +26,7 @@ function Api({
             <div className="container contSearch mt-5">
                 <SearchApi
                     search={searchIput}
+                    enterKye={enterKye}
                 />
                 <ButtonSearch
                     button={butSearch}

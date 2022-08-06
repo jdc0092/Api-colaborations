@@ -24,6 +24,12 @@ function App() {
 
   }
 
+  const enterKye = (e) => {
+    if (e.key === "Enter") {
+      setSearchBut(search);
+    }
+  }
+
   const butSearch = () => {
     setSearchBut(search);
   }
@@ -41,7 +47,6 @@ function App() {
 
   // Importando API de los Repositorios de Githut..
   const Url = `${UrlGlobal}/search/repositories?per_page=${loandMoreRepositories}&q=${searchBut}`
-  console.log(loandMoreRepositories)
 
   useEffect(() => {
     const fechtApi = async () => {
@@ -77,6 +82,7 @@ function App() {
     <Api
       selectApi={selectApi}
       searchIput={searchIput}
+      enterKye={enterKye}
       butSearch={butSearch}
       loandMoreRepoButon={loandMoreRepoButon}
       topContribuitor={topContribuitor}

@@ -3,9 +3,14 @@ import React from 'react';
 
 
 function SearchApi(props) {
-    return (
-        <input className='TodoSearch form-control' id='searchApi' placeholder='Search repositories' onChange={props.search} />
 
+    
+
+    return (
+        <div className="App">
+        <input className='TodoSearch form-control' onKeyPress={props.enterKye} placeholder='Search repositories' onChange={props.search} />
+    </div>
+        
     )
 }
 
